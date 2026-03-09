@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2026-03-09
+
+### Added
+- 3 Subscription MCP tools: list, insert, delete (src/tools/subscriptions.ts)
+- Subscribe/unsubscribe to channels with resourceId support
+- List subscriptions with order, pagination, and forChannelId filtering
+- 5 unit tests for subscription tools registration and descriptions
+- 59 total tests passing across 11 test suites
+
 ## [0.10.0] - 2026-03-09
 
 ### Added

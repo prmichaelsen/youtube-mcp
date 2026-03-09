@@ -6,6 +6,7 @@ import { registerPlaylistItemsTools } from "./tools/playlist-items.js";
 import { registerSearchTools } from "./tools/search.js";
 import { registerVideoTools } from "./tools/videos.js";
 import { registerChannelTools } from "./tools/channels.js";
+import { registerSubscriptionTools } from "./tools/subscriptions.js";
 
 /**
  * Create and configure the MCP server with all YouTube tools.
@@ -13,7 +14,7 @@ import { registerChannelTools } from "./tools/channels.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.10.0",
+    version: "0.11.0",
   });
 
   if (auth) {
@@ -23,6 +24,7 @@ export function createServer(auth?: YouTubeAuth): McpServer {
     registerSearchTools(server, client);
     registerVideoTools(server, client);
     registerChannelTools(server, client);
+    registerSubscriptionTools(server, client);
   }
 
   return server;
