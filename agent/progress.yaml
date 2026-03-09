@@ -1,6 +1,6 @@
 project:
   name: youtube-mcp
-  version: 0.7.0
+  version: 0.8.0
   started: 2026-03-09
   status: in_progress
   description: |
@@ -106,7 +106,8 @@ tasks:
   T8:
     name: "Video Tools"
     milestone: M2
-    status: not_started
+    status: completed
+    completed_date: 2026-03-09
     estimated_hours: 5
     dependencies: [T7]
     document: agent/tasks/milestone-2-videos-and-search/task-8-video-tools.md
@@ -191,10 +192,11 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 41
-  overall: 40
+  implementation: 47
+  overall: 46
 
 recent_work:
+  - "T8: Video tools - list, insert/upload, update, delete, rate, getRating (6 tools)"
   - "T7: Search tool with type/order/date/region filters (100 quota units)"
   - "T6: Testing & Verification MVP - 36 tests passing, fixtures, mock helpers"
   - "T4+T5: Playlist and PlaylistItems tools (8 MCP tools total)"
@@ -204,7 +206,7 @@ recent_work:
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T8: Video Tools"
+  - "T9: Streamable HTTP Transport"
 
 notes:
   - "Total estimated hours: 70-90"

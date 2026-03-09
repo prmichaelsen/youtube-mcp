@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2026-03-09
+
+### Added
+- 6 Video MCP tools: list, insert (upload), update, delete, rate, getRating (src/tools/videos.ts)
+- Streaming file upload for youtube_videos_insert (1600 quota units)
+- Video rating tools (like/dislike/none) for authenticated users
+- 8 unit tests for video tools registration and description validation
+- 47 total tests passing across 8 test suites
+
+### Changed
+- Task T8 (Video Tools) completed in Milestone M2
+
 ## [0.7.0] - 2026-03-09
 
 ### Added
