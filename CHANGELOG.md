@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-03-09
+
+### Added
+- 4 Playlist MCP tools: list, insert, update, delete (src/tools/playlists.ts)
+- 4 PlaylistItems MCP tools: list, insert, update, delete (src/tools/playlist-items.ts)
+- All tools have Zod input validation and quota cost in descriptions
+- Server registers tools when auth is provided
+- Unit tests for tool registration and description validation
+
 ## [0.4.0] - 2026-03-09
 
 ### Added
