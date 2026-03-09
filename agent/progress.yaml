@@ -1,6 +1,6 @@
 project:
   name: youtube-mcp
-  version: 0.8.0
+  version: 0.9.0
   started: 2026-03-09
   status: in_progress
   description: |
@@ -17,7 +17,7 @@ milestones:
 
   - id: M2
     name: "Videos & Search"
-    status: in_progress
+    status: completed
     document: agent/milestones/milestone-2-videos-and-search.md
     tasks: [T7, T8, T9]
     tools_count: 7
@@ -115,7 +115,8 @@ tasks:
   T9:
     name: "Streamable HTTP Transport"
     milestone: M2
-    status: not_started
+    status: completed
+    completed_date: 2026-03-09
     estimated_hours: 4
     dependencies: [T8]
     document: agent/tasks/milestone-2-videos-and-search/task-9-streamable-http-transport.md
@@ -192,10 +193,11 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 47
-  overall: 46
+  implementation: 53
+  overall: 52
 
 recent_work:
+  - "T9: Streamable HTTP transport with CLI args and env var config"
   - "T8: Video tools - list, insert/upload, update, delete, rate, getRating (6 tools)"
   - "T7: Search tool with type/order/date/region filters (100 quota units)"
   - "T6: Testing & Verification MVP - 36 tests passing, fixtures, mock helpers"
@@ -206,7 +208,7 @@ recent_work:
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T9: Streamable HTTP Transport"
+  - "T10: Channel Tools"
 
 notes:
   - "Total estimated hours: 70-90"

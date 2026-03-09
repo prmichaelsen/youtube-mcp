@@ -12,7 +12,7 @@ import { registerVideoTools } from "./tools/videos.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.8.0",
+    version: "0.9.0",
   });
 
   if (auth) {

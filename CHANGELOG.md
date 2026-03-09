@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2026-03-09
+
+### Added
+- Streamable HTTP transport (src/transport/http.ts)
+- CLI argument parsing: --transport (stdio|http), --port, --host
+- Environment variable fallbacks: TRANSPORT, HTTP_PORT, HTTP_HOST
+- Health check endpoint at /health
+- Session-based HTTP connections via MCP SDK StreamableHTTPServerTransport
+- 2 unit tests for HTTP transport module
+- 50 total tests passing across 9 test suites
+
+### Changed
+- Entry point (src/index.ts) supports both stdio and HTTP transports
+- Milestone M2 (Videos & Search) completed
+
 ## [0.8.0] - 2026-03-09
 
 ### Added
