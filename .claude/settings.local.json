@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(/home/prmichaelsen/.acp/agent/scripts/acp.package-install.sh:*)",
+      "Bash(./agent/scripts/acp.package-install.sh:*)",
+      "Bash(~/.acp/agent/scripts/acp.package-install.sh:*)",
+      "Bash(mv:*)",
+      "WebSearch",
+      "WebFetch(domain:developers.google.com)",
+      "Bash(git add:*)"
+    ]
+  }
+}

@@ -6,28 +6,196 @@ project:
   description: |
     YouTube MCP server with OAuth and playlist management
 
-milestones: []
+milestones:
+  - id: M1
+    name: "Foundation + Playlists (MVP)"
+    status: not_started
+    document: agent/milestones/milestone-1-foundation-playlists-mvp.md
+    tasks: [T1, T2, T3, T4, T5, T6]
+    tools_count: 8
+    estimated_hours: "20-26"
 
-tasks: {}
+  - id: M2
+    name: "Videos & Search"
+    status: not_started
+    document: agent/milestones/milestone-2-videos-and-search.md
+    tasks: [T7, T8, T9]
+    tools_count: 7
+    estimated_hours: "14-18"
+
+  - id: M3
+    name: "Social Features"
+    status: not_started
+    document: agent/milestones/milestone-3-social-features.md
+    tasks: [T10, T11, T12, T13]
+    tools_count: 12
+    estimated_hours: "16-20"
+
+  - id: M4
+    name: "Full Coverage"
+    status: not_started
+    document: agent/milestones/milestone-4-full-coverage.md
+    tasks: [T14, T15, T16, T17]
+    tools_count: 25
+    estimated_hours: "20-26"
+
+tasks:
+  T1:
+    name: "Project Scaffolding"
+    milestone: M1
+    status: not_started
+    estimated_hours: 2
+    dependencies: []
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-1-project-scaffolding.md
+
+  T2:
+    name: "OAuth 2.0 Setup"
+    milestone: M1
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T1]
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-2-oauth-setup.md
+
+  T3:
+    name: "YouTube API Client Wrapper"
+    milestone: M1
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T2]
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-3-youtube-api-client-wrapper.md
+
+  T4:
+    name: "Playlist Tools"
+    milestone: M1
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T3]
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-4-playlist-tools.md
+
+  T5:
+    name: "PlaylistItems Tools"
+    milestone: M1
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T3]
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-5-playlist-items-tools.md
+
+  T6:
+    name: "Testing & Verification MVP"
+    milestone: M1
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T4, T5]
+    document: agent/tasks/milestone-1-foundation-playlists-mvp/task-6-testing-verification-mvp.md
+
+  T7:
+    name: "Search Tool"
+    milestone: M2
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T6]
+    document: agent/tasks/milestone-2-videos-and-search/task-7-search-tool.md
+
+  T8:
+    name: "Video Tools"
+    milestone: M2
+    status: not_started
+    estimated_hours: 5
+    dependencies: [T7]
+    document: agent/tasks/milestone-2-videos-and-search/task-8-video-tools.md
+
+  T9:
+    name: "Streamable HTTP Transport"
+    milestone: M2
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T8]
+    document: agent/tasks/milestone-2-videos-and-search/task-9-streamable-http-transport.md
+
+  T10:
+    name: "Channel Tools"
+    milestone: M3
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T9]
+    document: agent/tasks/milestone-3-social-features/task-10-channel-tools.md
+
+  T11:
+    name: "Subscription Tools"
+    milestone: M3
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T10]
+    document: agent/tasks/milestone-3-social-features/task-11-subscription-tools.md
+
+  T12:
+    name: "CommentThread Tools"
+    milestone: M3
+    status: not_started
+    estimated_hours: 3
+    dependencies: [T10]
+    document: agent/tasks/milestone-3-social-features/task-12-comment-thread-tools.md
+
+  T13:
+    name: "Comment Tools"
+    milestone: M3
+    status: not_started
+    estimated_hours: 5
+    dependencies: [T12]
+    document: agent/tasks/milestone-3-social-features/task-13-comment-tools.md
+
+  T14:
+    name: "Caption Tools"
+    milestone: M4
+    status: not_started
+    estimated_hours: 5
+    dependencies: [T13]
+    document: agent/tasks/milestone-4-full-coverage/task-14-caption-tools.md
+
+  T15:
+    name: "Channel Management Tools"
+    milestone: M4
+    status: not_started
+    estimated_hours: 6
+    dependencies: [T14]
+    document: agent/tasks/milestone-4-full-coverage/task-15-channel-management-tools.md
+
+  T16:
+    name: "Metadata & Reporting Tools"
+    milestone: M4
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T14]
+    document: agent/tasks/milestone-4-full-coverage/task-16-metadata-reporting-tools.md
+
+  T17:
+    name: "Documentation & Polish"
+    milestone: M4
+    status: not_started
+    estimated_hours: 4
+    dependencies: [T14, T15, T16]
+    document: agent/tasks/milestone-4-full-coverage/task-17-documentation-polish.md
 
 documentation:
-  design_documents: 0
-  milestone_documents: 0
+  design_documents: 1
+  milestone_documents: 4
   pattern_documents: 0
-  task_documents: 0
+  task_documents: 17
 
 progress:
-  planning: 0
+  planning: 100
   implementation: 0
-  overall: 0
+  overall: 5
 
-recent_work: []
+recent_work:
+  - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - Define project requirements in agent/design/requirements.md
-  - Plan milestones and tasks with @acp.plan
   - Start development with @acp.proceed
+  - Begin with Task 1 (Project Scaffolding)
 
-notes: []
+notes:
+  - "Total estimated hours: 70-90"
+  - "52 YouTube Data API v3 endpoints across all milestones"
 
 current_blockers: []
