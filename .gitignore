@@ -41,6 +41,9 @@ yarn-error.log*
 coverage/
 .nyc_output/
 
+# Tokens
+.tokens/
+
 # Misc
 .cache/
 .temp/
