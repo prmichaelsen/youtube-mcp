@@ -10,7 +10,7 @@ import { registerPlaylistItemsTools } from "./tools/playlist-items.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.5.0",
+    version: "0.6.0",
   });
 
   if (auth) {

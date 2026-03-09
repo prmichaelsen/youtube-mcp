@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-03-09
+
+### Added
+- Test fixtures for YouTube API responses (playlists, playlist items)
+- Mock client helper for unit testing
+- E2E server creation tests
+- Integration test scaffold (skippable without API credentials)
+- 36 total tests passing across 6 test suites
+
+### Changed
+- Milestone M1 (Foundation + Playlists MVP) completed
+
 ## [0.5.0] - 2026-03-09
 
 ### Added
