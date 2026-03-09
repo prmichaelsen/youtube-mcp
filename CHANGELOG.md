@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-03-09
+
+### Added
+- 2 CommentThread MCP tools: list, insert (src/tools/comment-threads.ts)
+- List comment threads by video, channel, or ID with search and order
+- Post top-level comments (requires youtube.force-ssl scope)
+- 5 unit tests for comment thread tools
+- 64 total tests passing across 12 test suites
+
 ## [0.11.0] - 2026-03-09
 
 ### Added
