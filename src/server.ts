@@ -8,6 +8,7 @@ import { registerVideoTools } from "./tools/videos.js";
 import { registerChannelTools } from "./tools/channels.js";
 import { registerSubscriptionTools } from "./tools/subscriptions.js";
 import { registerCommentThreadTools } from "./tools/comment-threads.js";
+import { registerCommentTools } from "./tools/comments.js";
 
 /**
  * Create and configure the MCP server with all YouTube tools.
@@ -15,7 +16,7 @@ import { registerCommentThreadTools } from "./tools/comment-threads.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.12.0",
+    version: "0.13.0",
   });
 
   if (auth) {
@@ -27,6 +28,7 @@ export function createServer(auth?: YouTubeAuth): McpServer {
     registerChannelTools(server, client);
     registerSubscriptionTools(server, client);
     registerCommentThreadTools(server, client);
+    registerCommentTools(server, client);
   }
 
   return server;

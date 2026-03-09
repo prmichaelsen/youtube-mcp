@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2026-03-09
+
+### Added
+- 5 Comment MCP tools: list, insert, update, delete, moderate (src/tools/comments.ts)
+- Reply to comments, edit, delete, and set moderation status (publish/hold/reject)
+- Ban author option with moderation rejection
+- All write tools require youtube.force-ssl scope
+- 8 unit tests for comment tools
+- 72 total tests passing across 13 test suites
+
+### Changed
+- Milestone M3 (Social Features) completed
+
 ## [0.12.0] - 2026-03-09
 
 ### Added
