@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-03-09
+
+### Added
+- 2 Channel MCP tools: list, update (src/tools/channels.ts)
+- Channel list supports ID, username, and authenticated user lookup
+- Channel update supports description, keywords, language, country
+- 4 unit tests for channel tools registration and descriptions
+- 54 total tests passing across 10 test suites
+
+### Changed
+- Task T10 (Channel Tools) completed — M3 started
+
 ## [0.9.0] - 2026-03-09
 
 ### Added
