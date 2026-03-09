@@ -1,6 +1,6 @@
 project:
   name: youtube-mcp
-  version: 0.2.0
+  version: 0.3.0
   started: 2026-03-09
   status: in_progress
   description: |
@@ -52,7 +52,8 @@ tasks:
   T2:
     name: "OAuth 2.0 Setup"
     milestone: M1
-    status: not_started
+    status: completed
+    completed_date: 2026-03-09
     estimated_hours: 4
     dependencies: [T1]
     document: agent/tasks/milestone-1-foundation-playlists-mvp/task-2-oauth-setup.md
@@ -185,15 +186,16 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 6
-  overall: 10
+  implementation: 12
+  overall: 15
 
 recent_work:
+  - "T2: OAuth 2.0 auth module with token storage, refresh, and scope management"
   - "T1: Project scaffolding complete - package.json, tsconfig, esbuild, jest, entry points"
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T2: OAuth 2.0 Setup"
+  - "T3: YouTube API Client Wrapper"
 
 notes:
   - "Total estimated hours: 70-90"

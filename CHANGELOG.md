@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-03-09
+
+### Added
+- Google OAuth 2.0 authentication module (src/auth/oauth.ts)
+- YouTubeAuth class with token storage, refresh, and scope management
+- Authorization URL generation with configurable scopes
+- Automatic token refresh with 5-minute expiry buffer
+- Secure token persistence (0600 file permissions)
+- OAuth scope constants for all YouTube API scope categories
+- Unit tests for auth module (9 tests passing)
+
 ## [0.2.0] - 2026-03-09
 
 ### Added
