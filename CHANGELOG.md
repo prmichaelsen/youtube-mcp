@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-03-09
+
+### Added
+- YouTube API client wrapper (src/client/youtube.ts)
+- YouTubeClient class with authenticated API access
+- Error mapping: 400/401/403/404/409/5xx to clear messages
+- Quota-exceeded detection (403 with quotaExceeded reason)
+- Retry with exponential backoff for 5xx errors (1s, 2s, 4s)
+- Quota cost constants for all operation types
+- 13 unit tests for client module
+
 ## [0.3.0] - 2026-03-09
 
 ### Added
