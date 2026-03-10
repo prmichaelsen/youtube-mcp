@@ -1,5 +1,5 @@
 {
-  "name": "youtube-mcp",
+  "name": "@prmichaelsen/youtube-mcp",
   "version": "1.1.0",
   "description": "MCP server wrapping the YouTube Data API v3 for AI agents",
   "main": "dist/index.js",
@@ -19,7 +19,8 @@
     "dev": "tsx watch src/index.ts",
     "start": "node dist/index.js",
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
