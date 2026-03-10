@@ -14,6 +14,11 @@ import { registerChannelSectionTools } from "./tools/channel-sections.js";
 import { registerChannelBannerTools } from "./tools/channel-banners.js";
 import { registerThumbnailTools } from "./tools/thumbnails.js";
 import { registerWatermarkTools } from "./tools/watermarks.js";
+import { registerActivityTools } from "./tools/activities.js";
+import { registerMemberTools } from "./tools/members.js";
+import { registerI18nTools } from "./tools/i18n.js";
+import { registerVideoCategoryTools } from "./tools/video-categories.js";
+import { registerVideoAbuseTools } from "./tools/video-abuse.js";
 
 /**
  * Create and configure the MCP server with all YouTube tools.
@@ -21,7 +26,7 @@ import { registerWatermarkTools } from "./tools/watermarks.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.15.0",
+    version: "0.16.0",
   });
 
   if (auth) {
@@ -39,6 +44,11 @@ export function createServer(auth?: YouTubeAuth): McpServer {
     registerChannelBannerTools(server, client);
     registerThumbnailTools(server, client);
     registerWatermarkTools(server, client);
+    registerActivityTools(server, client);
+    registerMemberTools(server, client);
+    registerI18nTools(server, client);
+    registerVideoCategoryTools(server, client);
+    registerVideoAbuseTools(server, client);
   }
 
   return server;

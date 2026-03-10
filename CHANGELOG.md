@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.16.0] - 2026-03-10
+
+### Added
+- 1 Activity tool: youtube_activities_list (src/tools/activities.ts)
+- 2 Member tools: youtube_members_list, youtube_memberships_levels_list (src/tools/members.ts)
+- 2 i18n tools: youtube_i18n_languages_list, youtube_i18n_regions_list (src/tools/i18n.ts)
+- 1 VideoCategory tool: youtube_video_categories_list (src/tools/video-categories.ts)
+- 2 Abuse tools: youtube_video_abuse_report_reasons_list, youtube_videos_report_abuse (src/tools/video-abuse.ts)
+- 8 metadata & reporting tools total
+- 12 unit tests for metadata & reporting tools
+- 101 total tests passing across 16 test suites
+
 ## [0.15.0] - 2026-03-10
 
 ### Added
