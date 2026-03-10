@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2026-03-10
+
+### Added
+- Comprehensive README.md with full tool reference (48 tools documented)
+- Claude Desktop configuration example
+- Quota budgeting guide
+- OAuth scopes reference
+- Project structure documentation
+
+### Changed
+- Version bumped to 1.0.0 (all milestones complete)
+- Milestone M4 (Full Coverage) completed
+- All 17 tasks across 4 milestones complete
+- 101 tests passing, 0 TypeScript errors
+
 ## [0.16.0] - 2026-03-10
 
 ### Added

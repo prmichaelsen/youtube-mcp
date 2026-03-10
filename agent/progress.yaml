@@ -1,8 +1,8 @@
 project:
   name: youtube-mcp
-  version: 0.16.0
+  version: 1.0.0
   started: 2026-03-09
-  status: in_progress
+  status: completed
   description: |
     YouTube MCP server with OAuth and playlist management
 
@@ -33,7 +33,7 @@ milestones:
 
   - id: M4
     name: "Full Coverage"
-    status: in_progress
+    status: completed
     document: agent/milestones/milestone-4-full-coverage.md
     tasks: [T14, T15, T16, T17]
     tools_count: 25
@@ -187,7 +187,8 @@ tasks:
   T17:
     name: "Documentation & Polish"
     milestone: M4
-    status: not_started
+    status: completed
+    completed_date: 2026-03-10
     estimated_hours: 4
     dependencies: [T14, T15, T16]
     document: agent/tasks/milestone-4-full-coverage/task-17-documentation-polish.md
@@ -200,10 +201,11 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 94
-  overall: 93
+  implementation: 100
+  overall: 100
 
 recent_work:
+  - "T17: Documentation & polish - comprehensive README, quality pass, v1.0.0"
   - "T16: Metadata & reporting - activities, members, i18n, categories, abuse (8 tools)"
   - "T15: Channel management - sections (4), banners (1), thumbnails (1), watermarks (2) = 8 tools"
   - "T14: Caption tools - list, insert, update, download, delete (5 tools)"
@@ -222,7 +224,7 @@ recent_work:
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T17: Documentation & Polish"
+  - "Project complete — all 4 milestones and 17 tasks done"
 
 notes:
   - "Total estimated hours: 70-90"

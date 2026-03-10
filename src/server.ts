@@ -26,7 +26,7 @@ import { registerVideoAbuseTools } from "./tools/video-abuse.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.16.0",
+    version: "1.0.0",
   });
 
   if (auth) {
