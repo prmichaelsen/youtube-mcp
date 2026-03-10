@@ -1,8 +1,18 @@
 {
   "name": "youtube-mcp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "MCP server wrapping the YouTube Data API v3 for AI agents",
   "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    },
+    "./factory": {
+      "types": "./dist/factory.d.ts",
+      "import": "./dist/factory.js"
+    }
+  },
   "type": "module",
   "scripts": {
     "build": "node esbuild.build.js",

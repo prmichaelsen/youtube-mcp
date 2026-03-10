@@ -154,20 +154,40 @@ export async function withRetry<T>(
  */
 export class YouTubeClient {
   private youtubeApi: youtube_v3.Youtube | null = null;
+  private auth?: YouTubeAuth;
+  private accessToken?: string;
 
-  constructor(private auth: YouTubeAuth) {}
+  constructor(authOrToken: YouTubeAuth | string) {
+    if (typeof authOrToken === 'string') {
+      this.accessToken = authOrToken;
+    } else {
+      this.auth = authOrToken;
+    }
+  }
 
   /**
    * Get the authenticated YouTube API client.
    * Lazily initialized and reuses the client across calls.
    */
   async getApi(): Promise<youtube_v3.Youtube> {
-    const authClient = await this.auth.getClient();
-    // Always create fresh to pick up refreshed tokens
-    this.youtubeApi = google.youtube({
-      version: "v3",
-      auth: authClient,
-    });
+    if (this.accessToken) {
+      // Token-based auth (multi-tenant mode)
+      const oauth2Client = new google.auth.OAuth2();
+      oauth2Client.setCredentials({ access_token: this.accessToken });
+      this.youtubeApi = google.youtube({
+        version: "v3",
+        auth: oauth2Client,
+      });
+    } else if (this.auth) {
+      const authClient = await this.auth.getClient();
+      // Always create fresh to pick up refreshed tokens
+      this.youtubeApi = google.youtube({
+        version: "v3",
+        auth: authClient,
+      });
+    } else {
+      throw new Error('No auth configured');
+    }
     return this.youtubeApi;
   }
 
