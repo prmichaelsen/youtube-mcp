@@ -1,6 +1,6 @@
 project:
   name: youtube-mcp
-  version: 0.13.0
+  version: 0.14.0
   started: 2026-03-09
   status: in_progress
   description: |
@@ -33,7 +33,7 @@ milestones:
 
   - id: M4
     name: "Full Coverage"
-    status: not_started
+    status: in_progress
     document: agent/milestones/milestone-4-full-coverage.md
     tasks: [T14, T15, T16, T17]
     tools_count: 25
@@ -160,7 +160,8 @@ tasks:
   T14:
     name: "Caption Tools"
     milestone: M4
-    status: not_started
+    status: completed
+    completed_date: 2026-03-10
     estimated_hours: 5
     dependencies: [T13]
     document: agent/tasks/milestone-4-full-coverage/task-14-caption-tools.md
@@ -197,10 +198,11 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 76
-  overall: 75
+  implementation: 82
+  overall: 81
 
 recent_work:
+  - "T14: Caption tools - list, insert, update, download, delete (5 tools)"
   - "T13: Comment tools - list, insert, update, delete, moderate (5 tools)"
   - "T12: CommentThread tools - list and insert (2 tools)"
   - "T11: Subscription tools - list, insert, delete (3 tools)"
@@ -216,7 +218,7 @@ recent_work:
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T14: Caption Tools"
+  - "T15: Channel Management Tools"
 
 notes:
   - "Total estimated hours: 70-90"
