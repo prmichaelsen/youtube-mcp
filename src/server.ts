@@ -10,6 +10,10 @@ import { registerSubscriptionTools } from "./tools/subscriptions.js";
 import { registerCommentThreadTools } from "./tools/comment-threads.js";
 import { registerCommentTools } from "./tools/comments.js";
 import { registerCaptionTools } from "./tools/captions.js";
+import { registerChannelSectionTools } from "./tools/channel-sections.js";
+import { registerChannelBannerTools } from "./tools/channel-banners.js";
+import { registerThumbnailTools } from "./tools/thumbnails.js";
+import { registerWatermarkTools } from "./tools/watermarks.js";
 
 /**
  * Create and configure the MCP server with all YouTube tools.
@@ -17,7 +21,7 @@ import { registerCaptionTools } from "./tools/captions.js";
 export function createServer(auth?: YouTubeAuth): McpServer {
   const server = new McpServer({
     name: "youtube-mcp",
-    version: "0.14.0",
+    version: "0.15.0",
   });
 
   if (auth) {
@@ -31,6 +35,10 @@ export function createServer(auth?: YouTubeAuth): McpServer {
     registerCommentThreadTools(server, client);
     registerCommentTools(server, client);
     registerCaptionTools(server, client);
+    registerChannelSectionTools(server, client);
+    registerChannelBannerTools(server, client);
+    registerThumbnailTools(server, client);
+    registerWatermarkTools(server, client);
   }
 
   return server;

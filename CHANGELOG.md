@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.15.0] - 2026-03-10
+
+### Added
+- 4 ChannelSection MCP tools: list, insert, update, delete (src/tools/channel-sections.ts)
+- 1 ChannelBanner MCP tool: insert/upload (src/tools/channel-banners.ts)
+- 1 Thumbnail MCP tool: set custom thumbnail (src/tools/thumbnails.ts)
+- 2 Watermark MCP tools: set, unset (src/tools/watermarks.ts)
+- 8 channel management tools total with streaming file uploads
+- 10 unit tests for channel management tools
+- 89 total tests passing across 15 test suites
+
+### Note
+- PlaylistImages API not available in googleapis SDK — 4 tools skipped
+
 ## [0.14.0] - 2026-03-10
 
 ### Added

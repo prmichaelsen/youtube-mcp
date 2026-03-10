@@ -1,6 +1,6 @@
 project:
   name: youtube-mcp
-  version: 0.14.0
+  version: 0.15.0
   started: 2026-03-09
   status: in_progress
   description: |
@@ -169,7 +169,8 @@ tasks:
   T15:
     name: "Channel Management Tools"
     milestone: M4
-    status: not_started
+    status: completed
+    completed_date: 2026-03-10
     estimated_hours: 6
     dependencies: [T14]
     document: agent/tasks/milestone-4-full-coverage/task-15-channel-management-tools.md
@@ -198,10 +199,11 @@ documentation:
 
 progress:
   planning: 100
-  implementation: 82
-  overall: 81
+  implementation: 88
+  overall: 87
 
 recent_work:
+  - "T15: Channel management - sections (4), banners (1), thumbnails (1), watermarks (2) = 8 tools"
   - "T14: Caption tools - list, insert, update, download, delete (5 tools)"
   - "T13: Comment tools - list, insert, update, delete, moderate (5 tools)"
   - "T12: CommentThread tools - list and insert (2 tools)"
@@ -218,7 +220,7 @@ recent_work:
   - "Created 4 milestones and 17 tasks for full YouTube API coverage"
 
 next_steps:
-  - "T15: Channel Management Tools"
+  - "T16: Metadata & Reporting Tools"
 
 notes:
   - "Total estimated hours: 70-90"
